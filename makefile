@@ -23,7 +23,7 @@ include src/makefile-options
 
 # which layouts to compile (will override the variable in src/makefile-options)
 # --- default
-LAYOUT := qwerty-kinesis-mod
+LAYOUT := polaris-dvorak-mod
 # --- all
 LAYOUTS := qwerty-kinesis-mod dvorak-kinesis-mod colemak-symbol-mod workman-p-kinesis-mod
 
@@ -62,7 +62,7 @@ clean:
 	-rm -r '$(BUILD)'
 
 checkin:
-	-git commit -a
+	#-git commit -a
 
 build-dir:
 	-rm -r '$(BUILD)/$(TARGET)'*
