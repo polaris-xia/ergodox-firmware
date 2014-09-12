@@ -61,243 +61,47 @@ void kbfun_layer_pop_all(void) {
 
 // DEFINITIONS ----------------------------------------------------------------
 #define  popall   &kbfun_layer_pop_all
-#define  kprrel   &kbfun_press_release
+#define  pr       &kbfun_press_release
 #define  kprpst   &kbfun_press_release_preserve_sticky
 #define  mprrel   &kbfun_mediakey_press_release
 #define  ktrans   &kbfun_transparent
 #define  lpush1   &kbfun_layer_push_1
 #define  lpush2   &kbfun_layer_push_2
+#define  lpush3   &kbfun_layer_push_3
+#define  lpush4   &kbfun_layer_push_4
 #define  lsticky1   &kbfun_layer_sticky_1
 #define  lsticky2   &kbfun_layer_sticky_2
+#define  lsticky4   &kbfun_layer_sticky_4
+#define  lsticky5   &kbfun_layer_sticky_5 
 #define  lpop     &kbfun_layer_pop_all
 #define  lpop1    &kbfun_layer_pop_1
 #define  lpop2    &kbfun_layer_pop_2
+#define  lpop3    &kbfun_layer_pop_3
+#define  lpop4    &kbfun_layer_pop_4
 #define  dbtldr   &kbfun_jump_to_bootloader
-#define  shprre  &kbfun_shift_press_release
-#define  ctprre  &kbfun_control_press_release
-#define  alprre  &kbfun_alt_press_release
-#define  guprre  &kbfun_gui_press_release
-#define  caprre  &kbfun_control_alt_press_release
+#define  shpr  &kbfun_shift_press_release
+#define  ctpr    &kbfun_control_press_release
+#define  alpr  &kbfun_alt_press_release
+#define  gupr  &kbfun_gui_press_release
+#define  capr  &kbfun_control_alt_press_release
+#define  sapr  &kbfun_shift_alt_press_release
+#define  cagpr &kbfun_control_alt_gui_press_release
 // ----------------------------------------------------------------------------
 
 // LAYOUT ---------------------------------------------------------------------
 const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
-KB_MATRIX_LAYER(
-	// unused
-	0,	
-	// left hand
-	_esc,	_1,	_2,	_3,	_4,	_5,	_equal,	
-	_tab,	_quote,	_comma,	_period,	_P,	_Y,	0,	
-	0,	_A,	_O,	_E,	_U,	_I,	
-	_shiftL,	_semicolon,	_Q,	_J,	_K,	_X,	0,	
-	_guiL,	_ctrlL,	0,	0,	_altL,
-	_bs,	_del,	
-	0,	0,	_arrowU,	
-	0,	0,	_arrowD,	
-	// right hand
-	_grave,	_6,	_7,	_8,	_9,	_0,	_backslash,	
-	_home,	_F,	_G,	_C,	_R,	_L,	_slash,	
-	_D,	_H,	_T,	_N,	_S,	_dash,	
-	_end,	_B,	_M,	_W,	_V,	_Z,	_shiftR,	
-	1,	_bracketL,	_bracketR,	_altR,	_guiR,
-	_arrowL,	_arrowR,	
-	_pageU,	0,	0,	
-	_pageD,	_enter,	_space	
-),
-// LAYER 1
-KB_MATRIX_LAYER(
-	// unused
-	0,	
-	// left hand
-	0,	_1,	_2,	_3,	_4,	_5,	_equal,	
-	0,	_Q,	_W,	_E,	_R,	_T,	0,	
-	0,	_A,	_S,	_D,	_F,	_G,	
-	0,	_Z,	_X,	_C,	_V,	_B,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
-	0,	0,	0,	
-	0,	0,	0,	
-	// right hand
-	_grave,	_6,	_7,	_8,	_9,	_0,	0,	
-	0,	_Y,	_U,	_I,	_O,	_P,	0,	
-	_H,	_J,	_K,	_L,	_semicolon,	_dash,	
-	0,	_N,	_M,	_comma,	_period,	_slash,	0,	
-	1,	0,	0,	0,	0,	
-	0,	0,	
-	0,	0,	0,	
-	0,	0,	0	
-),
-// LAYER 2
-KB_MATRIX_LAYER(
-	// unused
-	0,	
-	// left hand
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
-	0,	0,	0,	
-	0,	0,	0,	
-	// right hand
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
-	0,	0,	0,	
-	0,	0,	0	
-),
+#include "keycode.layout"
 };
 // ----------------------------------------------------------------------------
 
 // PRESS ----------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
-	popall,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
-	kprrel,	kprrel,	NULL,	NULL,	kprrel,	
-	kprrel,	kprrel,	
-	NULL,	NULL,	kprrel,	
-	NULL,	NULL,	kprrel,	
-	// right hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	lsticky1,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
-	kprrel,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel	
-),
-// LAYER 1
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	ktrans,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	// right hand
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	lsticky1,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL	
-),
-// LAYER 2
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	// right hand
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL
-),
+#include "keypress.layout"
 };
 // ----------------------------------------------------------------------------
 
 // RELEASE --------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
-	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
-	kprrel,	kprrel,	NULL,	NULL,	kprrel,	
-	kprrel,	kprrel,	
-	NULL,	NULL,	kprrel,	
-	NULL,	NULL,	kprrel,	
-	// right hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	lsticky1,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
-	kprrel,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel	
-),
-// LAYER 1
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	ktrans,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	// right hand
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	
-	NULL,	ctprre,	ctprre,	ctprre,	ctprre,	ctprre,	NULL,	
-	lsticky1,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL	
-),
-// LAYER 2
-KB_MATRIX_LAYER(
-	// unused
-	NULL,	
-	// left hand
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	// right hand
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL,	NULL,	NULL,	
-	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
-	NULL,	NULL,	NULL
-),
+#include "keyrelease.layout"
 };
 // ----------------------------------------------------------------------------

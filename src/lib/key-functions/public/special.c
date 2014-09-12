@@ -58,11 +58,24 @@ void kbfun_alt_press_release(void) {
 	kbfun_press_release();
 }
 
+void kbfun_shift_alt_press_release(void) {
+  _kbfun_press_release(IS_PRESSED, KEY_LeftShift);
+  _kbfun_press_release(IS_PRESSED, KEY_LeftAlt);
+  kbfun_press_release();
+}
+
 void kbfun_control_alt_press_release(void) {
-	_kbfun_press_release(IS_PRESSED, KEY_LeftControl | KEY_LeftAlt);
+	_kbfun_press_release(IS_PRESSED, KEY_LeftControl);
+	_kbfun_press_release(IS_PRESSED, KEY_LeftAlt);
 	kbfun_press_release();
 }
 
+void kbfun_control_alt_gui_press_release(void) {
+  _kbfun_press_release(IS_PRESSED, KEY_LeftControl);
+  _kbfun_press_release(IS_PRESSED, KEY_LeftAlt);
+  _kbfun_press_release(IS_PRESSED, KEY_LeftGUI);
+  kbfun_press_release();
+}
 /*
  * [name]
  *   Two keys => capslock
