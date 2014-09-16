@@ -10,7 +10,7 @@ KB_MATRIX_LAYER(
 	gupr|gupr|_space,	pr|pr|_ctrlL,	        pr|pr|_dash,	        pr|pr|_equal,	        pr|pr|_altL,
 	pr|pr|_bs,	        pr|pr|_del,	
 	NULL|NULL|0,	        NULL|NULL|0,	        pr|pr|_arrowU,	
-	lpush2|lpop2|2,		lpush3|NULL|3,	        pr|pr|_arrowD,	
+	lpush2|lpop2|2,		lpush3|NULL|3,	        pr|pr|_f9,	
 	// right hand
 	lsticky5|lsticky5|5,	pr|pr|_6,       	pr|pr|_7,       	pr|pr|_8,       	pr|pr|_9,       	pr|pr|_0,       	pr|pr|_grave,	
 	pr|pr|_guiR,    	pr|pr|_Y,	        pr|pr|_U,	        pr|pr|_I,       	pr|pr|_O,       	pr|pr|_P,       	pr|pr|_backslash,	
@@ -18,8 +18,8 @@ KB_MATRIX_LAYER(
 	lsticky1|lsticky1|1,    pr|pr|_N,       	pr|pr|_M,       	pr|pr|_comma,       	pr|pr|_period,       	pr|pr|_slash,       	pr|pr|_shiftR,	
 	                                                pr|pr|_ctrlR,		pr|pr|_bracketL,	pr|pr|_bracketR,	pr|pr|_pageU,	        pr|pr|_pageD,
 	pr|pr|_arrowL,		pr|pr|_arrowR,	
-	gupr|gupr|_space,	NULL|NULL|0,		NULL|NULL|0,	
-	pr|pr|_tab,		pr|pr|_enter,		pr|pr|_space	
+	pr|pr|_arrowU,		NULL|NULL|0,		NULL|NULL|0,	
+	pr|pr|_arrowD,		pr|pr|_enter,		pr|pr|_space	
 ),
 // LAYER 1: symbol layer
 KB_MATRIX_LAYER(
@@ -37,7 +37,7 @@ KB_MATRIX_LAYER(
 	// right hand
 	NULL|NULL|0,		NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,   		NULL|NULL|0,   		NULL|NULL|0,	
 	ktrans|ktrans|0,	shpr|shpr|_6,	        shpr|shpr|_7,   	shpr|shpr|_8,	        shpr|shpr|_9,	        shpr|shpr|_0,	        NULL|NULL|0,	
-	                        shpr|shpr|_semicolon,	pr|pr|_equal,	        pr|pr|_quote,   	shpr|shpr|_dash,	pr|pr|_dash,		NULL|NULL|0,	
+	                        shpr|shpr|_semicolon,	pr|pr|_equal,	        shpr|shpr|_quote,   	shpr|shpr|_dash,	pr|pr|_dash,		NULL|NULL|0,	
 	lsticky1|lsticky1|1,	pr|pr|_backslash,	shpr|shpr|_slash,	shpr|shpr|_comma,	shpr|shpr|_period,	NULL|NULL|0,		NULL|NULL|0,	
 	                                                ktrans|ktrans|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,	        NULL|NULL|0,	
@@ -60,22 +60,22 @@ KB_MATRIX_LAYER(
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,    	alpr|alpr|_B,    	pr|pr|_arrowU,    	alpr|alpr|_F,    	NULL|NULL|0,	        NULL|NULL|0,	
 	                        ctpr|ctpr|_A,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,	        NULL|NULL|0,    	ctpr|ctpr|_E,	
-	NULL|NULL|0,    	alpr|sapr|_M,    	alpr|alpr|_N,           alpr|alpr|_comma,    	NULL|NULL|0,    	NULL|NULL|0,    	ktrans|ktrans|0,	
+	NULL|NULL|0,    	gupr|gupr|_Z,    	gupr|gupr|_X,           gupr|gupr|_C,    	gupr|gupr|_V,    	NULL|NULL|0,    	ktrans|ktrans|0,	
 	                                                NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,	
 	pr|pr|_home,    	NULL|NULL|0,    	NULL|NULL|0,	
 	pr|pr|_end,	    	NULL|NULL|0,    	NULL|NULL|0	
 ),
-// LAYER 3: command layer (maily for left hand)
+// LAYER 3: command layer (mainly for left hand)
 KB_MATRIX_LAYER(
 	// unused
 	NULL|NULL|0,
 	// left hand
 	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,    	gupr|gupr|_tab,    	NULL|NULL|0,    	pr|pr|_arrowU,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	popall|NULL|0,	        NULL|NULL|0,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,    	popall|NULL|0,	
+	NULL|NULL|0,    	pr|pr|_home,    	pr|pr|_end,    		pr|pr|_arrowU,    	pr|pr|_pageD,    	pr|pr|_pageU,    	NULL|NULL|0,	
+	popall|NULL|0,	        gupr|gupr|_tab,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,    	popall|NULL|0,	
 	NULL|NULL|0,    	gupr|gupr|_Z,    	gupr|gupr|_X,    	gupr|gupr|_C,    	gupr|gupr|_V,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,	        NULL|NULL|0,    	pr|pr|_bs,    		pr|pr|_del,    		NULL|NULL|0,	
 	ktrans|ktrans|0,    	ktrans|ktrans|0,	
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
 	lpush2|lpop2|2,	        lpop3|NULL|3,    	NULL|NULL|0,	

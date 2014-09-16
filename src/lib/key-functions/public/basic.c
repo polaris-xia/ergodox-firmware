@@ -36,7 +36,7 @@
  *   Generate a normal keypress or keyrelease
  */
 void kbfun_press_release(void) {
-	if (!main_arg_trans_key_pressed)
+	if (!main_arg_trans_key_pressed && IS_PRESSED)
 		main_arg_any_non_trans_key_pressed = true;
 	kbfun_press_release_preserve_sticky();
 }
