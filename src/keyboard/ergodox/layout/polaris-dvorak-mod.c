@@ -71,6 +71,7 @@ void kbfun_layer_pop_all(void) {
 #define  lpush4   &kbfun_layer_push_4
 #define  lsticky1   &kbfun_layer_sticky_1
 #define  lsticky2   &kbfun_layer_sticky_2
+#define  lsticky3   &kbfun_layer_sticky_3
 #define  lsticky4   &kbfun_layer_sticky_4
 #define  lsticky5   &kbfun_layer_sticky_5 
 #define  lpop     &kbfun_layer_pop_all
