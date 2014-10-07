@@ -3,46 +3,46 @@ KB_MATRIX_LAYER(
 	// unused
 	NULL|NULL|0,	
 	// left hand
-	gupr|gupr|_space,	shpr|shpr|_4,	        pr|pr|_bracketL,	shpr|shpr|_bracketL,	shpr|shpr|_bracketR,	shpr|shpr|_9,	        NULL|NULL|0,	
-	pr|pr|_tab,	        pr|pr|_semicolon,	lsticky1|lsticky1|1,	lsticky3|lsticky3|3,	pr|pr|_P,	        pr|pr|_Y,	        shpr|shpr|_quote,	
-	pr|pr|_ctrlL,		pr|pr|_A,       	pr|pr|_O,       	pr|pr|_E,       	pr|pr|_U,       	pr|pr|_I,	
-	pr|pr|_shiftL,	        pr|pr|_slash,		pr|pr|_Q,       	pr|pr|_J,       	pr|pr|_K,       	pr|pr|_X,       	shpr|shpr|_dash,	
-	NULL|NULL|0,		NULL|NULL|0,	        NULL|NULL|0,	        pr|pr|_altL,	        lpush2|lpop2|2,
-	gupr|gupr|_C,	        gupr|gupr|_V,	
-	NULL|NULL|0,	        NULL|NULL|0,	        gupr|gupr|_X,	
-	pr|pr|_period,		pr|pr|_comma,		pr|pr|_F9,	
+	shpr|shpr|_7,		shpr|shpr|_4,	        pr|pr|_bracketL,	shpr|shpr|_bracketL,	shpr|shpr|_bracketR,	shpr|shpr|_9,	        gupr|gupr|_space,	
+	shpr|shpr|_backslash,	pr|pr|_tab,		pr|pr|_period,		lsticky1|lsticky1|1,	pr|pr|_P,	        pr|pr|_Y,	        pr|pr|_quote,	
+	shpr|shpr|_grave,	pr|pr|_slash,       	pr|pr|_O,       	pr|pr|_E,       	pr|pr|_U,       	pr|pr|_I,	
+	pr|pr|_comma,	        pr|pr|_A,		pr|pr|_Q,       	pr|pr|_J,       	pr|pr|_K,       	pr|pr|_X,       	shpr|shpr|_semicolon,	
+	pr|pr|_dash,		pr|pr|_semicolon,	shpr|shpr|_1,	        pr|pr|_esc,	        pr|pr|_guiL,
+	pr|pr|_ctrlL,	        pr|pr|_altL,	
+	NULL|NULL|0,	        NULL|NULL|0,	        pr|pr|_capsLock,	
+	pr|pr|_shiftL,		lpush2|lpop2|2,		lsticky3|lsticky3|3,	
 	// right hand
-	pr|pr|_esc,		pr|pr|_equal,       	shpr|shpr|_8,       	shpr|shpr|_0,       	pr|pr|_quote,		pr|pr|_bracketR,       	NULL|NULL|0,	
-	pr|pr|_bs,    		pr|pr|_F,	        pr|pr|_G,	        pr|pr|_C,       	pr|pr|_R,       	pr|pr|_L,       	shpr|shpr|_equal,	
-	                        pr|pr|_D,	        pr|pr|_H,       	pr|pr|_T,       	pr|pr|_N,	        pr|pr|_S,       	pr|pr|_dash,	
-	pr|pr|_del,    		pr|pr|_B,       	pr|pr|_M,       	pr|pr|_W,       	pr|pr|_V,       	pr|pr|_Z,       	pr|pr|_shiftR,	
-	                                                pr|pr|_ctrlR,		pr|pr|_guiR,		NULL|NULL|0,		NULL|NULL|0,	        alpr|alpr|_tab,
-	pr|pr|_arrowL,		pr|pr|_arrowR,	
-	pr|pr|_arrowU,		NULL|NULL|0,		NULL|NULL|0,	
-	pr|pr|_arrowD,		pr|pr|_enter,		pr|pr|_space	
+	pr|pr|_esc,		pr|pr|_equal,       	shpr|shpr|_8,       	shpr|shpr|_0,       	pr|pr|_bracketR,	shpr|shpr|_comma,       shpr|shpr|_period,	
+	pr|pr|_bs,    		pr|pr|_F,	        pr|pr|_G,	        pr|pr|_C,       	pr|pr|_R,       	shpr|shpr|_quote,       pr|pr|_backslash,	
+	                        pr|pr|_D,	        pr|pr|_H,       	pr|pr|_T,       	pr|pr|_N,	        pr|pr|_L,       	shpr|shpr|_equal,	
+	pr|pr|_del,    		pr|pr|_B,       	pr|pr|_M,       	pr|pr|_W,       	pr|pr|_V,       	pr|pr|_S,       	shpr|shpr|_dash,	
+	                                                pr|pr|_guiR,		NULL|NULL|0,		shpr|shpr|_slash,	pr|pr|_Z,	        shpr|shpr|_2,
+	pr|pr|_altR,		pr|pr|_ctrlR,	
+	gupr|gupr|_C,		NULL|NULL|0,		NULL|NULL|0,	
+	gupr|gupr|_V,		pr|pr|_enter,		pr|pr|_space	
 ),
-// LAYER 1: symbol layer
+// LAYER 1: symbol and number layer
 KB_MATRIX_LAYER(
-	// unused`
+	// unused
 	NULL|NULL|0,	
 	// left hand
-	pr|pr|_F11,    		pr|pr|_F1,    		pr|pr|_F2,    		pr|pr|_F3,    		pr|pr|_F4,    		pr|pr|_F5,    		NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	popall|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	ktrans|ktrans|0,	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	ktrans|ktrans|0,   	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	ktrans|ktrans|0,    	ktrans|ktrans|0,	
-	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	popall|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,		NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,   		NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,		NULL|NULL|0,    	NULL|NULL|0,    	ktrans|ktrans|0,    	ktrans|ktrans|0,	
+	ktrans|ktrans|0,    	ktrans|ktrans|0,	
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,		NULL|NULL|0,    	NULL|NULL|0,	
 	// right hand
-	NULL|NULL|0,		pr|pr|_F6,    		pr|pr|_F7,    		pr|pr|_F8,    		pr|pr|_F9,	        pr|pr|_F10,   		pr|pr|_F12,	
-	ktrans|ktrans|0,	shpr|shpr|_grave,	shpr|shpr|_comma,   	shpr|shpr|_period,	shpr|shpr|_7,	        NULL|NULL|0,	        NULL|NULL|0,	
-	                        shpr|shpr|_backslash,	shpr|shpr|_semicolon,	shpr|shpr|_1,		shpr|shpr|_slash,   	pr|pr|_backslash,	NULL|NULL|0,	
-	NULL|NULL|0,		shpr|shpr|_2,		shpr|shpr|_5,		shpr|shpr|_3,		shpr|shpr|_6,		pr|pr|_grave,		ktrans|ktrans|0,	
+	NULL|NULL|0,		NULL|NULL|0,    	NULL|NULL|0,    	shpr|shpr|_6,    	NULL|NULL|0,	        NULL|NULL|0,   		NULL|NULL|0,	
+	ktrans|ktrans|0,	pr|pr|_grave,		pr|pr|_4,   		pr|pr|_5,		pr|pr|_6,	        NULL|NULL|0,	        NULL|NULL|0,	
+	                        pr|pr|_0,		pr|pr|_1,		pr|pr|_2,		pr|pr|_3,   		shpr|shpr|_5,		NULL|NULL|0,	
+	ktrans|ktrans|0,	shpr|shpr|_3,		pr|pr|_7,		pr|pr|_8,		pr|pr|_9,		pr|pr|_period,		NULL|NULL|0,	
 	                                                ktrans|ktrans|0,    	ktrans|ktrans|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,		NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,   		NULL|NULL|0,    	NULL|NULL|0
+	ktrans|ktrans|0,	ktrans|ktrans|0,	
+	NULL|NULL|0,    	NULL|NULL|0,		NULL|NULL|0,	
+	NULL|NULL|0,   		pr|pr|_enter,    	pr|pr|_space
 ),
 // LAYER 2: editing layer
 KB_MATRIX_LAYER(
@@ -59,35 +59,35 @@ KB_MATRIX_LAYER(
 	// right hand
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,    	alpr|alpr|_B,    	pr|pr|_arrowU,    	alpr|alpr|_F,    	NULL|NULL|0,	        NULL|NULL|0,	
-	                        ctpr|ctpr|_A,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,	        NULL|NULL|0,    	ctpr|ctpr|_E,	
-	NULL|NULL|0,    	gupr|gupr|_Z,    	gupr|gupr|_X,           gupr|gupr|_C,    	gupr|gupr|_V,    	NULL|NULL|0,    	ktrans|ktrans|0,	
+	                        ctpr|ctpr|_A,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,	        NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,           	NULL|NULL|0,    	alpr|alpr|_period,    	NULL|NULL|0,    	ctpr|ctpr|_E,	
 	                                                NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,	
-	pr|pr|_home,    	NULL|NULL|0,    	NULL|NULL|0,	
-	pr|pr|_end,	    	NULL|NULL|0,    	NULL|NULL|0	
+	pr|pr|_home,    	NULL|NULL|0,    	NULL|NULL|0,
+	pr|pr|_end,	    	NULL|NULL|0,    	alpr|alpr|_space	
 ),
 // LAYER 3: command layer (number layer)
 KB_MATRIX_LAYER(
 	// unused
 	NULL|NULL|0,
 	// left hand
-	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	popall|NULL|0,		NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	ktrans|ktrans|0,	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	ktrans|ktrans|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	ktrans|ktrans|0,    	ktrans|ktrans|0,	
+	pr|pr|_F1,    		pr|pr|_F6,    		pr|pr|_F7,    		pr|pr|_F8,    		pr|pr|_F9,    		pr|pr|_F10,    		pr|pr|_F12,    		
+	pr|pr|_F2,    		pr|pr|_F11,    		pr|pr|_home,    	pr|pr|_arrowU,    	pr|pr|_end,    		pr|pr|_pageU,    	pr|pr|_volumeU,	
+	pr|pr|_F3,	        pr|pr|_insert,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,    	pr|pr|_pageD,	
+	pr|pr|_F4,    		gupr|gupr|_Z,    	gupr|gupr|_X,    	gupr|gupr|_C,    	gupr|gupr|_V,    	pr|pr|_F5,    		pr|pr|_volumeD,	
+	pr|pr|_print,	        pr|pr|_pause,    	NULL|NULL|0,    	pr|pr|_esc,    		pr|pr|_application,	
 	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
+	pr|pr|_mute,	        NULL|NULL|0,    	lsticky3|lsticky3|3,
 	// right hand
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
-	ktrans|ktrans|0,    	NULL|NULL|0,    	pr|pr|_7,    		pr|pr|_8,    		pr|pr|_9,    		NULL|NULL|0,	        NULL|NULL|0,	
-	                        NULL|NULL|0,    	pr|pr|_4,    		pr|pr|_5,    		pr|pr|_6,	        pr|pr|_period,    	NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	pr|pr|_1,            	pr|pr|_2,    		pr|pr|_3,    		NULL|NULL|0,    	ktrans|ktrans|0,	
-	                                                ktrans|ktrans|0,    	ktrans|ktrans|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,	
+	                        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,            NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
+	                                                NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	pr|pr|_0	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0
 ),
 // LAYER 4: function key layer
 KB_MATRIX_LAYER(
