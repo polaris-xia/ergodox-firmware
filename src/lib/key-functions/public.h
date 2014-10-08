@@ -57,13 +57,15 @@
 	void kbfun_jump_to_bootloader (void);
 
 	// special
+	extern int sh_key_count;
 	void kbfun_shift_press_release           (void);
+	void kbfun_press_release_no_check_sh     (void);
 	void kbfun_control_press_release         (void);
 	void kbfun_gui_press_release             (void);
 	void kbfun_alt_press_release             (void);
 	void kbfun_control_alt_press_release     (void);
-void kbfun_shift_alt_press_release       (void);
-void kbfun_control_alt_gui_press_release (void);
+	void kbfun_shift_alt_press_release       (void);
+	void kbfun_control_alt_gui_press_release (void);
 	void kbfun_2_keys_capslock_press_release (void);
 	void kbfun_layer_push_numpad             (void);
 	void kbfun_layer_pop_numpad              (void);

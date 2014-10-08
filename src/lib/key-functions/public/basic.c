@@ -11,6 +11,7 @@
 #include "../../../keyboard/layout.h"
 #include "../public.h"
 #include "../private.h"
+#include "../../../lib/usb/usage-page/keyboard.h"
 
 // ----------------------------------------------------------------------------
 
@@ -36,11 +37,19 @@
  *   Generate a normal keypress or keyrelease
  */
 void kbfun_press_release(void) {
+	if (sh_key_count > 0 && IS_PRESSED) {
+		_kbfun_press_release(0, KEY_LeftShift);
+	}
 	if (!main_arg_trans_key_pressed && IS_PRESSED)
 		main_arg_any_non_trans_key_pressed = true;
 	kbfun_press_release_preserve_sticky();
 }
 
+void kbfun_press_release_no_check_sh(void) {
+	if (!main_arg_trans_key_pressed && IS_PRESSED)
+		main_arg_any_non_trans_key_pressed = true;
+	kbfun_press_release_preserve_sticky();
+}
 /*
  * [name]
  *   Press|Release and preserve top layer sticky key state

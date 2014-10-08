@@ -38,9 +38,19 @@
  *   Generate a 'shift' press or release before the normal keypress or
  *   keyrelease
  */
+int sh_key_count = 0;
 void kbfun_shift_press_release(void) {
-	_kbfun_press_release(IS_PRESSED, KEY_LeftShift);
-	kbfun_press_release();
+	if (IS_PRESSED) {
+		sh_key_count += 1;
+	} else {
+		sh_key_count -= 1;
+	}
+	if (sh_key_count > 0) {
+		_kbfun_press_release(1, KEY_LeftShift);	
+	} else {
+		_kbfun_press_release(0, KEY_LeftShift);	
+	}
+	kbfun_press_release_no_check_sh();
 }
 
 void kbfun_control_press_release(void) {
