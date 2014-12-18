@@ -49,7 +49,7 @@ KB_MATRIX_LAYER(
 	NULL|NULL|0,	
 	// left hand
 	dbtldr|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	alpr|alpr|_bs,	    	alpr|alpr|_D,	    	ctpr|ctpr|_K,    	NULL|NULL|0,	
+	NULL|NULL|0,    	NULL|NULL|0,    	alpr|alpr|_2,    	alpr|alpr|_bs,	    	alpr|alpr|_D,	    	ctpr|ctpr|_K,    	NULL|NULL|0,	
 	NULL|NULL|0,	        NULL|NULL|0,    	pr|pr|_shiftL,    	pr|pr|_bs,		pr|pr|_del,		NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
@@ -60,7 +60,7 @@ KB_MATRIX_LAYER(
 	NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	        NULL|NULL|0,	        NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,    	alpr|alpr|_B,    	pr|pr|_arrowU,    	alpr|alpr|_F,    	NULL|NULL|0,	        NULL|NULL|0,	
 	                        ctpr|ctpr|_A,    	pr|pr|_arrowL,    	pr|pr|_arrowD,    	pr|pr|_arrowR,	        NULL|NULL|0,    	NULL|NULL|0,	
-	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,           	NULL|NULL|0,    	alpr|alpr|_period,    	NULL|NULL|0,    	ctpr|ctpr|_E,	
+	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,           	NULL|NULL|0,    	alpr|alpr|_period,    	alpr|alpr|_semicolon,   ctpr|ctpr|_E,	
 	                                                NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,    	NULL|NULL|0,	
 	NULL|NULL|0,    	NULL|NULL|0,	
 	pr|pr|_home,    	NULL|NULL|0,    	NULL|NULL|0,
