@@ -69,6 +69,8 @@ void kbfun_layer_pop_all(void) {
 #define  lpush2   &kbfun_layer_push_2
 #define  lpush3   &kbfun_layer_push_3
 #define  lpush4   &kbfun_layer_push_4
+#define  lpush5   &kbfun_layer_push_5
+#define  lpush6   &kbfun_layer_push_6
 #define  lsticky1   &kbfun_layer_sticky_1
 #define  lsticky2   &kbfun_layer_sticky_2
 #define  lsticky3   &kbfun_layer_sticky_3
@@ -79,6 +81,8 @@ void kbfun_layer_pop_all(void) {
 #define  lpop2    &kbfun_layer_pop_2
 #define  lpop3    &kbfun_layer_pop_3
 #define  lpop4    &kbfun_layer_pop_4
+#define  lpop5    &kbfun_layer_pop_5
+#define  lpop6    &kbfun_layer_pop_6
 #define  dbtldr   &kbfun_jump_to_bootloader
 #define  shpr  &kbfun_shift_press_release
 #define  ctpr    &kbfun_control_press_release
